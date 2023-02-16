@@ -5,7 +5,8 @@ public class triangularNumber {
     private static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
         int n = GetNumber("Введите целое число");
-        System.out.print(n);
+        int res = TriangularNumber(n);
+        System.out.print(res);
         
     }
     
@@ -16,12 +17,9 @@ public class triangularNumber {
     }
 
     //2.Нахождение n-ого числа.
-    public static void TriangularNumber(int number){
-
+    public static int TriangularNumber(int number){
+        int triangularN = (number*(number+1))/2;
+        return triangularN;
     }
 
-    // //3.Вывод в консоль результата.
-    // public static String print(int triangular){
-        
-    // }
 }
